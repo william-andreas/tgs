@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body{
+            background: url(pt.jpeg) no-repeat;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container{
+            width: 400px;
+            font-size: 25px;
+            padding: 50px;
+        }
+
+        .registration-from{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+        }
+
+        .registration-from h1{
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+
+        .registration-from p{
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .registration-from input{
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .registration-from button{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 10px 15px;
+            width: 50%;
+            border: 0;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .registration-from button:hover{
+            color: red;
+        }
+    </style>
+    <div class="container">
+        <form action="proses.php" method="post">
+            <img src="p.png" width="100px">
+            <h1>Form Registrasi</h1>
+            <form action="#" method="post">
+                <p>Full Nama:</p>
+                <input type="text" name="fullnama" placeholder="Full Nama">
+                <p>User Nama:</p>
+                <input type="text" name="user" placeholder="User Nama">
+                <P>Email</P>
+                <input type="email" name="email" placeholder="Email">
+                <p>Passord</p>
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Registrasi</button>
+            </form>
+        </form>
+    </div>       
+</body>
+</html>
